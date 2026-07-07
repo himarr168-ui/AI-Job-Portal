@@ -17,7 +17,7 @@ def read_docx(file_path):
         text+=para.text+"\n"
     return text
 def clean_text(text):
-    text=text.replace("\n"," ")
+    #text=text.replace("\n"," ")
     text=" ".join(text.split())
     return text
 
@@ -28,7 +28,6 @@ def save_text(text, output_file):
 if __name__=="__main__":
     resume_path="data\sampleresume.pdf"
     text=read_pdf(resume_path)
-    print(text)
     cleaned_text=clean_text(text)
     save_text(cleaned_text,"data\clean_resume.txt")
     print("Resume parsed successfully")

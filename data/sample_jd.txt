@@ -1,0 +1,18 @@
+Python Developer
+
+Requirements:
+
+- Python
+- Django
+- SQL
+- Git
+- REST API
+
+Experience:
+2+ years
+
+Education:
+B.Tech / BCA / MCA
+
+Location:
+Bangalore

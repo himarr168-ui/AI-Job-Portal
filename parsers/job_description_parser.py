@@ -18,12 +18,14 @@ def extract_job_details(text):
 
     job["skills"] = skills
 
-    for line in lines:
-        if "Experience" in line:
-            job["experience"] = line.replace("Experience:", "").strip()
+    for i, line in enumerate(lines):
 
-        if "Education" in line:
-            job["education"] = line.replace("Education:", "").strip()
+     if "experience" in line.lower() and i + 1 < len(lines):
+        job["experience"] = lines[i + 1].strip()
+
+     elif "education" in line.lower() and i + 1 < len(lines):
+        job["education"] = lines[i + 1].strip()
+
 
     return job
 

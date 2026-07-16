@@ -1,3 +1,4 @@
+import re
 import pdfplumber
 from docx import Document
 import os
@@ -17,9 +18,14 @@ def read_docx(file_path):
         text+=para.text+"\n"
     return text
 def clean_text(text):
-    #text=text.replace("\n"," ")
-    text=" ".join(text.split())
-    return text
+    # Remove extra spaces but keep line breaks
+    text = re.sub(r"[ \t]+", " ", text)
+
+    # Remove too many blank lines
+    text = re.sub(r"\n\s*\n+", "\n\n", text)
+
+    return text.strip()
+
 
 def save_text(text, output_file):
     with open(output_file,"w",encoding="utf-8") as file:

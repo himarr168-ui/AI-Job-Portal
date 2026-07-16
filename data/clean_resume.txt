@@ -1,1 +1,48 @@
-H IMA R R B S C C O M P U T E R S C I E N C E G R A D U A T E CONTACT SUMMARY 6282620438 Highly motivated B. Sc Computer Science student (graduating 2026) himarr168@gmail.com seeking to launch a career as an Analyst Trainee at Cognizant. Eager Tvm, Kerala, India to leverage technical knowledge, problem-solving abilities, and strong linkedin.com/in/hima-r-r-5a1101383 communication skills to deliver exceptional support in Digital Workplace Services. Enthusiastic about continuous learning and contributing effectively to team goals. EDUCATION INTERNSHIPS B. Sc computer science UIT, Neyyattinkara AI Developer Intern | (Zecser Business LLP) 2023-2026 Duration: [June, 2026] – Present • Actively working on artificial intelligence concepts, enhancing Plus two [cs] practical coding and problem-solving skills. GGHSS Malayinkeezhu • Collaborating with team members to understand project 2021- 2023 requirements and implementing AI-driven solutions. • Gaining hands-on experience in software development life TECHNICAL cycles and modern technology frameworks. SKILLS Programming: Python, PROJECTS C++, HTML, CSS, Home Service Web Application JavaScript • Technologies: HTML, CSS, PHP, MySQL Databases: SQL, MySQL • Developed a full-stack platform connecting users with home service providers. • Implemented user authentication, service booking, and an admin panel. LANGUAGES Fake News Detection System • Technologies: Python, Machine Learning, NLP • English • Malayalam • Built a machine learning model to classify news as real or fake. • Utilized NLP techniques like TF-IDF and Logistic Regression algorithms.
+H IMA R R
+B S C C O M P U T E R S C I E N C E G R A D U A T E
+CONTACT
+SUMMARY
+6282620438
+Highly motivated B. Sc Computer Science student (graduating 2026)
+himarr168@gmail.com
+seeking to launch a career as an Analyst Trainee at Cognizant. Eager
+Tvm, Kerala, India
+to leverage technical knowledge, problem-solving abilities, and strong
+linkedin.com/in/hima-r-r-5a1101383
+communication skills to deliver exceptional support in Digital
+Workplace Services. Enthusiastic about continuous learning and
+contributing effectively to team goals.
+EDUCATION
+INTERNSHIPS
+B. Sc computer science
+UIT, Neyyattinkara
+AI Developer Intern | (Zecser Business LLP)
+2023-2026
+Duration: [June, 2026] – Present
+• Actively working on artificial intelligence concepts, enhancing
+Plus two [cs]
+practical coding and problem-solving skills.
+GGHSS Malayinkeezhu
+• Collaborating with team members to understand project
+2021- 2023
+requirements and implementing AI-driven solutions.
+• Gaining hands-on experience in software development life
+TECHNICAL cycles and modern technology frameworks.
+SKILLS
+Programming: Python, PROJECTS
+C++, HTML, CSS,
+Home Service Web Application
+JavaScript
+• Technologies: HTML, CSS, PHP, MySQL
+Databases: SQL, MySQL
+• Developed a full-stack platform connecting users with home
+service providers.
+• Implemented user authentication, service booking, and an
+admin panel.
+LANGUAGES
+Fake News Detection System
+• Technologies: Python, Machine Learning, NLP
+• English
+• Malayalam • Built a machine learning model to classify news as real or fake.
+• Utilized NLP techniques like TF-IDF and Logistic Regression
+algorithms.

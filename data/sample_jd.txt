@@ -1,18 +1,17 @@
-Python Developer
+AI Developer
 
 Requirements:
 
 - Python
-- Django
-- SQL
-- Git
+- machine learning
+- deep learning
+- NLP
 - REST API
+- SQL
 
 Experience:
-2+ years
+1 years in AI or Machine learning
 
 Education:
-B.Tech / BCA / MCA
+Bachelor's degree in computer science
 
-Location:
-Bangalore

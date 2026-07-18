@@ -64,3 +64,21 @@ print(profile.model_dump_json(indent=4))
 score = calculate_education_score(profile)
 
 print("\nEducation Relevance Score:", score)
+
+from matching.semantic_matcher import SemanticMatcher
+
+matcher = SemanticMatcher()
+
+resume_text = read_pdf("data/sampleresume.pdf")
+resume_text = clean_text(resume_text)
+
+jd_text = matcher.read_text_file("data/sample_jd.txt")
+
+score = matcher.calculate_similarity(
+    resume_text,
+    jd_text
+)
+
+print("\n========== SEMANTIC MATCHING ==========")
+print(f"Similarity Score : {round(score,2)}")
+print(f"Match Result : {matcher.get_match_label(score)}")

@@ -2,7 +2,7 @@ from parsers.resume_parser import read_pdf, clean_text
 from parsers.experience_parser import ExperienceParser
 from scoring.experience_engine import ExperienceEngine
 import os
-resume_path = os.path.join("data", "sampleresume.pdf")
+resume_path = os.path.join("data/resumes/sampleresume.pdf")
 
 text = read_pdf(resume_path)
 cleaned_text = clean_text(text)
@@ -41,7 +41,7 @@ from parsers.education_parser import EducationParser
 from parsers.education_relevance import calculate_education_score
 from parsers.resume_parser import read_pdf, clean_text
 
-resume = "data/sampleresume.pdf"
+resume = "data/resumes/sampleresume.pdf"
 
 text = read_pdf(resume)
 text = clean_text(text)
@@ -69,7 +69,7 @@ from matching.semantic_matcher import SemanticMatcher
 
 matcher = SemanticMatcher()
 
-resume_text = read_pdf("data/sampleresume.pdf")
+resume_text = read_pdf("data/resumes/sampleresume.pdf")
 resume_text = clean_text(resume_text)
 
 jd_text = matcher.read_text_file("data/sample_jd.txt")
@@ -104,3 +104,22 @@ report = ats.generate_report(
 
 for key, value in report.items():
     print(f"{key}: {value}")
+
+from ranking.ranking_engine import CandidateRanker
+
+print("\n========== RANKED CANDIDATES ==========\n")
+
+ranker = CandidateRanker()
+
+results = ranker.rank_candidates(
+    "data/resumes",
+    "data/sample_jd.txt"
+)
+
+for index, candidate in enumerate(results, start=1):
+
+    print(f"Rank : {index}")
+    print(f"Resume : {candidate['candidate']}")
+    print(f"ATS Score : {candidate['ats_score']}")
+    print(f"Status : {candidate['status']}")
+    print("-" * 35)

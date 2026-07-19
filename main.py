@@ -82,3 +82,25 @@ score = matcher.calculate_similarity(
 print("\n========== SEMANTIC MATCHING ==========")
 print(f"Similarity Score : {round(score,2)}")
 print(f"Match Result : {matcher.get_match_label(score)}")
+
+from scoring.ats_engine import ATSEngine
+
+print("\n========== ATS SCORING ==========\n")
+
+ats = ATSEngine()
+
+# Sample scores (previous modules-ൽ നിന്ന്)
+skill_score = 75
+experience_score = 33
+education_score = 30
+semantic_score = 37
+
+report = ats.generate_report(
+    skill_score,
+    experience_score,
+    education_score,
+    semantic_score
+)
+
+for key, value in report.items():
+    print(f"{key}: {value}")

@@ -123,3 +123,21 @@ for index, candidate in enumerate(results, start=1):
     print(f"ATS Score : {candidate['ats_score']}")
     print(f"Status : {candidate['status']}")
     print("-" * 35)
+
+    from normalization.normalization_engine import NormalizationEngine
+
+print("\n========== FAIRNESS REPORT ==========\n")
+
+engine = NormalizationEngine()
+
+normalized_text = engine.normalize_text(text)
+masked_text = engine.mask_personal_information(normalized_text)
+
+final_score = engine.normalize_score(report["Final ATS Score"])
+risk = engine.bias_risk(masked_text)
+
+print("Resume Normalized : Yes")
+print("Personal Data Masked : Yes")
+print("Score Normalized :", final_score)
+print("Bias Risk :", risk)
+
